@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    font-family: "Raleway", serif;
+}
+
+.navbar {
+    background-color: #4be3b0;
+}
+
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
+}
+
+.nav-link:hover {
+    background-color: #f4f4f4;
+    color: #4be3b0;
+}
+
+.header {
+    height: 100vh;
+    background: url("../images/bg.jpg") no-repeat center/cover;
+    /*background-size: 96% 100%;*/
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+}
+
+.description > h1 {
+    color: #4be3b0;
+}
+
+.description > p {
+    color: #e87e3f;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    width: 70%;
+}
+
+.description > a {
+    border-color: #4be3b0;
+    color: #e87e3f;
+}
+
+.description > a:hover {
+    background-color: #4be3b0;
+    color: #f4f4f4;
+}
+
+.about h1, .portfolio h1, .team h1 {
+    color: #4be3b0;
+}
+
+.about hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.about .border-left {
+    border-left: 4px solid #4be3b0!important;
+}
+
+.team__description {
+    background-color: #4be3b0;
+    color: #f4f4f4;
+    text-align: center;
+    border-top-right-radius: 93%;
+    transition: 0.7s ease-in-out;
+    position: absolute;
+    width: 90%;
+    bottom: 24px;
+}
+
+.team__description-user {
+    position: relative;
+    right: 20%;
+    top: 10px;
+}
+
+.team__description-title {
+    display: none;
+    position: absolute;
+    top: 30%;
+}
+
+.team__item:hover .team__description {
+    height: 85%;
+    border-top-right-radius: 0%;
+    background-color: rgba(174, 224, 207, 0.4);
+}
+
+.team__item:hover .team__description-user {
+    display: none;
+}
+
+.team__item:hover .team__description-title {
+    display: block;
+    color: #e87e3f;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: #4be3b0!important;
+}
+
+@media screen and (max-width: 992px) {
+    .description {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .description > p {
+        line-height: 1.8rem;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .team__item .team__description-title {
+        line-height: 1rem;
+        font-size: .7rem;
+        width: 96%;
+        top: 20%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about .border-left {
+        border-left: none!important;
+    }
+
+    .team__item .team__description-title {
+        line-height: .5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .description > h1{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
