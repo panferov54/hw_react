@@ -60,6 +60,9 @@ body {
     background-color: #4be3b0;
     color: #f4f4f4;
 }
+#doctors >img{
+   object-fit: fill;
+}
 
 .about h1, .portfolio h1, .team h1 {
     color: #4be3b0;

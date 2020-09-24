@@ -20,18 +20,18 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-end ml-5" id="navbar_menu">
-        <ul class="navbar-nav mr-5">
-            <li class="nav-item mr-1"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item mr-1"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li class="nav-item mr-1"><a href="#team" class="nav-link">Team</a></li>
-            <li class="nav-item mr-1"><a href="#contact" class="nav-link">Contact</a></li>
+        <ul class="navbar-nav mr-5" id="navmenu">
+<!--            <li class="nav-item mr-1"><a href="#about" class="nav-link">About</a></li>-->
+<!--            <li class="nav-item mr-1"><a href="#portfolio" class="nav-link">Portfolio</a></li>-->
+<!--            <li class="nav-item mr-1"><a href="#team" class="nav-link">Team</a></li>-->
+<!--            <li class="nav-item mr-1"><a href="#contact" class="nav-link">Contact</a></li>-->
             <!--  target="_blank"  - открыть страницу в новой вкладке -->
-            <li class="nav-item mr-1"><a href="https://facebook.com" target="_blank" class="nav-link">
-                <i class="fab fa-facebook-f">
-                    <!-- facebook icon+text should be here -->
-                    <span class="d-inline d-md-none">Facebook</span>
-                </i>
-            </a></li>
+<!--            <li class="nav-item mr-1"><a href="https://facebook.com" target="_blank" class="nav-link">-->
+<!--                <i class="fab fa-facebook-f">-->
+<!--                    &lt;!&ndash; facebook icon+text should be here &ndash;&gt;-->
+<!--                    <span class="d-inline d-md-none">Facebook</span>-->
+<!--                </i>-->
+<!--            </a></li>-->
         </ul>
     </div>
 </nav>
@@ -75,34 +75,8 @@
 <div id="portfolio" class="portfolio my-5">
     <h1 class="text-center mb-3">Portfolio</h1>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img src="images/portfolio-image.png" alt="portfolio" class="img-fluid mt-4">
-            </div>
+        <div class="row" id="portfolios">
+
         </div>
     </div>
 </div>
@@ -111,43 +85,8 @@
 <div id="team" class="team my-5">
     <div class="container">
         <h1 class="text-center mb-3">Our team</h1>
-        <div class="row">
-            <div class="col-sm-6 col-md-3 team__item">
-                <img src="images/cox.jpg" alt="cox" class="img-fluid">
-                <div class="team__description">
-                    <p class="team__description-user">Dr. Cox</p>
-                    <p class="team__description-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aspernatur, placeat.</p>
-                </div>
-                <span class="text-muted">Main Doctor</span>
-            </div>
-            <div class="col-sm-6 col-md-3 team__item">
-                <img src="images/cox.jpg" alt="cox" class="img-fluid">
-                <div class="team__description">
-                    <p class="team__description-user">Dr. Cox</p>
-                    <p class="team__description-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aspernatur, placeat.</p>
-                </div>
-                <span class="text-muted">Main Doctor</span>
-            </div>
-            <div class="col-sm-6 col-md-3 team__item">
-                <img src="images/cox.jpg" alt="cox" class="img-fluid">
-                <div class="team__description">
-                    <p class="team__description-user">Dr. Cox</p>
-                    <p class="team__description-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aspernatur, placeat.</p>
-                </div>
-                <span class="text-muted">Main Doctor</span>
-            </div>
-            <div class="col-sm-6 col-md-3 team__item">
-                <img src="images/cox.jpg" alt="cox" class="img-fluid">
-                <div class="team__description">
-                    <p class="team__description-user">Dr. Cox</p>
-                    <p class="team__description-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Aspernatur, placeat.</p>
-                </div>
-                <span class="text-muted">Main Doctor</span>
-            </div>
+        <div class="row" id="doctors">
+
         </div>
     </div>
 </div>
@@ -207,5 +146,11 @@
             mask: '+{7}(000)000-00-00'
         });
 </script>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<!-- Загрузим наш React-компонент. -->
+<script src="js/components/doctors.js" type="text/babel"></script>
 </body>
 </html>
